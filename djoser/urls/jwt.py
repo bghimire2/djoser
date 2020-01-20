@@ -5,4 +5,5 @@ urlpatterns = [
     url(r"^jwt/create/?", views.TokenObtainPairView.as_view(), name="jwt-create"),
     url(r"^jwt/refresh/?", views.TokenRefreshView.as_view(), name="jwt-refresh"),
     url(r"^jwt/verify/?", views.TokenVerifyView.as_view(), name="jwt-verify"),
+    url(r"^jwt/delete/?", views.TokenCookieDeleteView.as_view(), name='jwt-delete'),
 ]
